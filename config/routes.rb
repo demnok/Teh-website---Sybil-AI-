@@ -1,5 +1,7 @@
 Wagahahahgagahah::Application.routes.draw do
   
+  resources :pages
+
   get "api/NewScoring"
   match '/', to: 'static_pages#Home', via: 'get'
   match '/global_ranking', to: 'static_pages#GlobalRanking', via: 'get'
